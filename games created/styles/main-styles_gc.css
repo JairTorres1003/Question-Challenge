@@ -1,0 +1,120 @@
+:root{
+    --Dominant_FontFamily--: Arial, Helvetica, sans-serif;
+    --Dominant_color--: rgb(9, 4, 36);
+    --Background_page--: rgb(167, 201, 202);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--Background_page--);
+}
+/*Todo:barra de informacion-----------------------------------------*/
+.bar_information{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+
+}
+.bar_information::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Dominant_color--);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -5px;
+}
+/*return home*/
+.return_home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.return_home:hover{
+    opacity: 0.5;
+}
+/*titulo tabla de clasificaión*/
+.games_created_title{
+    position: relative;
+}
+/*Todo:creación del juego ----------------------------------------*/
+.games_created{
+    margin-top: 20px;
+    width: 100%;
+    height: calc(94vh - 60px);
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+    position: relative;
+    
+}
+.block_games_created{
+    width: 100%;
+    height: calc(94vh - 60px);
+    max-height: calc(94vh - 60px);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--Dominant_color--);
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    overflow: auto;
+}
+.block_games_created::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+.block_games_created::-webkit-scrollbar-thumb{
+    background-color: rgba(138, 138, 138, 0.5);
+    border-radius: 10px;
+}
+.table-dark {
+    --bs-table-bg: var(--Dominant_color--);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+.table-sm{
+    --bs-table-bg: transparent;
+    color: var(--Dominant_color--);
+    border-color: var(--Dominant_color--);
+}
+.play_game{
+    width: 15px;
+}
+.play{
+    cursor: pointer;
+    color: var(--Dominant_color--);
+}
+.play:hover{
+    opacity: 0.5;
+}
+/*Todo:deshabilitador de bloques*/
+.disabled_block{
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
