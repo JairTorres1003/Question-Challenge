@@ -1,0 +1,219 @@
+:root{
+    --Dominant_FontFamily--: Arial, Helvetica, sans-serif;
+    --Dominant_color--: rgb(9, 4, 36);
+    --Background_page--: rgb(167, 201, 202);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--Background_page--);
+}
+/*Todo:barra de informacion-----------------------------------------*/
+.bar_information{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+
+}
+.bar_information::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Dominant_color--);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -5px;
+}
+/*return home*/
+.return_home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.return_home:hover{
+    opacity: 0.5;
+}
+/*creating title de la partida*/
+.creating_title{
+    position: relative;
+}
+
+/*Todo:creación del juego ----------------------------------------*/
+.creating_game{
+    margin-top: 20px;
+    width: 100%;
+    height: calc(94vh - 60px);
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+    position: relative;
+    
+}
+.block_creating{
+    width: 100%;
+    height: max-content;
+    max-height: calc(94vh - 60px);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--Dominant_color--);
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    overflow: auto;
+}
+.block_creating::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+.block_creating::-webkit-scrollbar-thumb{
+    background-color: rgba(138, 138, 138, 0.5);
+    border-radius: 10px;
+}
+/*caracteristicas del juego*/
+.characteristics label{
+    font-size: 1.2em;
+}
+.characteristics input{
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--Dominant_color--);
+    color: var(--Dominant_color--);
+}
+.characteristics input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.characteristics .c-name_game{
+    padding-bottom: 10px;
+}
+.define_point_level{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*Todo: asignacioón de preguntas y respuestas por nivel ---------------------------*/
+.QA-c{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--Dominant_color--);
+    font-family: var(--Dominant_FontFamily--);
+    font-size: 1.1em;
+    width: 100%;
+    height: max-content;
+    padding-top: 15px;
+}
+.block_levels{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    height: max-content;
+    width: 90%;
+}
+.inputs{
+    width: 100%;
+    height: max-content;
+}
+.block_levels .icon{
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+    border-radius: 50%;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--Dominant_color--);
+}
+.questions-c{
+    width: 100%;
+    height: max-content;
+}
+.questions-c textarea{
+    width: 90%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--Dominant_color--);
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    font-size: 1em;
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+}
+.answer-c{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 80px;
+}
+.answer-c textarea{
+    width: 80%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--Dominant_color--);
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    font-size: 1em;
+    font-family: var(--Dominant_FontFamily--);
+    color: var(--Dominant_color--);
+}
+/*Todo. estilos para los botones ------------------------*/
+.btn-c{
+    width: 300px;
+    height: 70px;
+    position: relative;
+    margin-top: 15px;
+}
+.btn-c input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 1.4em;
+    padding: 15px;
+    background-color: var(--Dominant_color--);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn-c input:hover{
+    background: var(--Dominant_color--);
+    opacity: 0.5;
+}
+.c_level .btn-c{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/*Todo: deshabilitar bloques --------------------*/
+.disabled_block{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
