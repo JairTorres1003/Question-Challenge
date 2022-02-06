@@ -29,3 +29,7 @@ En cada una de las paginas se aprecion el icono de una casa el cual al hacer cli
 El proyecto fue realizado usando el servidor de XAMPP.
 por lo que para su correcta ejecución se debera tener intalado luego se debera dirigir a la carpeta C:\xampp\htdocs y pegar todo el proyecto ahi.
 luego se debera agragar la base de datos a http://localhost/phpmyadmin en donde se tendra la opción para la importacion del archivo .sql
+
+# Otros
+El proyecto cuenta solo con 1 Environments activo, el cual solo tiene como funcionalidad mostrar el proyecto de php con ayuda de heroku.
+Este proyecto no acedera a la base de datos para mostrar la información suministrada en el archivo .sql, ya si se quiere hacer uso de correcto del proyecto se tendra descargar el proyecto y realizar los pasos previamente descritos en (Información adicional para su ejecución).
