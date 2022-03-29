@@ -1,7 +1,7 @@
 # Question Challenge
 
 En la primera imagen se tiene la opción de navegar por alguna de las 4 paginas.
-![Captura de pantalla (33)](https://user-images.githubusercontent.com/83931760/148919202-1e4cdcd5-c2db-4f4a-aa4e-fca348b4ff1c.png)
+![58024bb4-eebf-4a83-933a-e12e71f0a8bf](https://user-images.githubusercontent.com/83931760/160696510-0d1e1441-54b0-4cde-a3bc-4614bf55298d.png)
 
 Para iniciar una partida basta con hacer click en "Jugar" se resalta que esta medida esta diseñada para siempre jugar la partida por Default de la pagina, no obstante hay otras maneras de poder jugar una partida recien creada la cual se vera cuando se de click en "Partidas creadas".
 
