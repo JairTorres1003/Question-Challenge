@@ -1,5 +1,5 @@
 <?php
-$con_db = mysqli_connect("ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "p7w8823tke1weid4", "ns5sj7p3cukhk0m2", "ejoe5es3lhxe3mvf");
+$con_db = mysqli_connect("localhost", "root", "", "challenge_concurso de preguntas_y_respuestas");
 $val = include('../php/play_game.php');
 
 $gamePlay = $val;
