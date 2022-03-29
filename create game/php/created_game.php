@@ -1,5 +1,5 @@
 <?php
-$con_db = mysqli_connect("localhost", "root", "", "challenge_concurso de preguntas_y_respuestas");
+$con_db = mysqli_connect("	ik1eybdutgxsm0lo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "p7w8823tke1weid4", "ns5sj7p3cukhk0m2", "challenge_concurso de preguntas_y_respuestas");
 if (isset($_REQUEST['to_accept'])) {
     # Nombre de la partida
     $nameGame = $_POST['name_game']; #1
